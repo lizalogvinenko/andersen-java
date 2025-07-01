@@ -1,12 +1,12 @@
 package io.github.lizalogvinenko.lesson_8;
 
 public class Employee {
-    private String fullName;
-    private String position;
-    private String email;
-    private String phone;
-    private int salary;
-    private int age;
+    private final String fullName;
+    private final String position;
+    private final String email;
+    private final String phone;
+    private final int salary;
+    private final int age;
 
     public Employee(
             String fullName,
@@ -23,17 +23,23 @@ public class Employee {
         this.age = age;
     }
 
-    public int getAge(){
+    public int getAge() {
         return age;
     }
 
-    public void info() {
-        System.out.println("Employee: "
-                + fullName + ", "
-                + position + ", "
-                + email + ", "
-                + phone + ", "
-                + salary + ", "
-                + age);
+    public void printInfo() {
+        System.out.println(this);
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "fullName='" + fullName + '\'' +
+                ", position='" + position + '\'' +
+                ", email='" + email + '\'' +
+                ", phone='" + phone + '\'' +
+                ", salary=" + salary +
+                ", age=" + age +
+                '}';
     }
 }

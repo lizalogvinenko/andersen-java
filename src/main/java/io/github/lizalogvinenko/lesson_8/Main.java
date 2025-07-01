@@ -14,7 +14,7 @@ public class Main {
         for (Employee employee : employees) {
             int age = employee.getAge();
             if (age > 40) {
-                employee.info();
+                employee.printInfo();
             }
         }
     }
