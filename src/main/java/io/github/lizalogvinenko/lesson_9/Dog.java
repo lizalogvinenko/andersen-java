@@ -7,8 +7,8 @@ public class Dog extends Animal {
     }
 
     @Override
-    public void run(int distance){
-        if (distance < getRunLimit()){
+    public void run(int distance) {
+        if (distance < getRunLimit()) {
             super.run(distance);
         } else {
             System.out.println("Too long distance!");
@@ -17,7 +17,7 @@ public class Dog extends Animal {
 
     @Override
     public void swim(int distance) {
-        if (distance < getSwimLimit()){
+        if (distance < getSwimLimit()) {
             super.swim(distance);
         } else {
             System.out.println("Too long distance!");
